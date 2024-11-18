@@ -12,10 +12,13 @@ The gamepad have 4 directional buttons and two action buttons (A and B):
 
 The gamepad port has 8 pins, but only 6 are used. From left to right:
 
-  1 2 3 4
+| 1 2 3 4 |
+
 | o o o o |
+
 | o o o o |
-  5 6 7 8
+
+| 5 6 7 8 |
 
 The internal buttons connect the data pins to one of two GNDs: one for the arrows and one for the action buttons. Some buttons use the same data pin, but have different GNDs to differentiate. Thats the case for Left/A, and Right/B. So, you have to use "pull-up" resistors and alternate the GNDs to find out which button have been pressed.
 
