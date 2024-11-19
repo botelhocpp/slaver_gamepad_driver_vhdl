@@ -20,13 +20,13 @@ The gamepad port has 8 pins, but only 6 are used. From left to right:
 
 | 5 6 7 8 |
 
-The internal buttons connect the data pins to one of two GNDs: one for the arrows and one for the action buttons. Some buttons use the same data pin, but have different GNDs to differentiate. Thats the case for Left/A, and Right/B. So, you have to use "pull-up" resistors and alternate the GNDs to find out which button have been pressed.
+The internal buttons connect the data pins to one of two common (COM) pins: one for the arrows and one for the action buttons. Some buttons use the same data pin, but have different COMs to differentiate. Thats the case for Left/A, and Right/B. So, you have to use "pull-down" (or pull-up) resistors and alternate the COMs to find out which button have been pressed.
 
 1) Up
 2) N/C
 3) N/C
-4) Arrows GND
+4) Arrows COM
 5) Down
 6) Left/A
 7) Right/B
-8) Action buttons GND 
+8) Action buttons COM 
